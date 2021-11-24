@@ -19,7 +19,7 @@ go run ./client/src/main
 # How to use the client
 As the architecture is based on [Remote Procedure Call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) the following request types are supported:
 
-`
+```
 // send a registration request to the server
 // if the sender name is already registered the client will receive an error message
 salute 
@@ -32,11 +32,11 @@ ack
 
 // represents a command supported by the server (see below)
 {command} args params
-`
+```
 
 The following commands can be used by a client to communicate with the server:
 
-`
+```
 // send a registration request to the server
 // if the sender name is already registered the client will receive an error message
 salute 
@@ -58,4 +58,4 @@ solve 3 [12,13,14]
 
 // solve the eighth problem
 solve 8 [23,17,15,3,18]
-`
+```
